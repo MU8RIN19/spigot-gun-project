@@ -74,13 +74,13 @@ public final class PluginTutorial extends JavaPlugin implements Listener {
         String displayName = meta.getDisplayName();
 
         if (displayName.equals(EGG_LAUNCHER_NAME)) {
-            Egg myEgg = player.launchProjectile(Egg.class);
-            specialEggs.add(myEgg);
-            startFlameTrail(myEgg);
+            Egg EggProjectile = player.launchProjectile(Egg.class);
+            specialEggs.add(EggProjectile);
+            startFlameTrail(EggProjectile);
         } else if (displayName.equals(SNOWBALL_LAUNCHER_NAME)) {
-            Snowball mySnowBall = player.launchProjectile(Snowball.class);
-            specialSnowballs.add(mySnowBall);
-            startFlameTrail(mySnowBall);
+            Snowball SnowBallProjectile = player.launchProjectile(Snowball.class);
+            specialSnowballs.add(SnowBallProjectile);
+            startFlameTrail(SnowBallProjectile);
         }
     }
 
@@ -145,17 +145,17 @@ public final class PluginTutorial extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin (PlayerJoinEvent e){
-    ItemMeta IroHoe = IronHoe.getItemMeta();
-    ItemMeta DiaHoe = DiamondHoe.getItemMeta();
+        ItemMeta IroHoe = IronHoe.getItemMeta();
+        ItemMeta DiaHoe = DiamondHoe.getItemMeta();
 
 
-    IroHoe.setDisplayName(SNOWBALL_LAUNCHER_NAME);
-    DiaHoe.setDisplayName(EGG_LAUNCHER_NAME);
+        IroHoe.setDisplayName(SNOWBALL_LAUNCHER_NAME);
+        DiaHoe.setDisplayName(EGG_LAUNCHER_NAME);
 
-    IronHoe.setItemMeta(IroHoe);
-    DiamondHoe.setItemMeta(DiaHoe);
+        IronHoe.setItemMeta(IroHoe);
+        DiamondHoe.setItemMeta(DiaHoe);
 
-    e.getPlayer().getInventory().addItem(IronHoe);
-    e.getPlayer().getInventory().addItem(DiamondHoe);
+        e.getPlayer().getInventory().addItem(IronHoe);
+        e.getPlayer().getInventory().addItem(DiamondHoe);
     }
 }
