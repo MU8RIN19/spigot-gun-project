@@ -1,4 +1,4 @@
-package com.M19.pluginTutorial;
+package com.M19.guns;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public final class PluginTutorial extends JavaPlugin implements Listener {
+public final class guns extends JavaPlugin implements Listener {
     // Custom launcher item names and projectile behavior tuning.
     private static final String EGG_LAUNCHER_NAME = "Egg Launcher";
     private static final String SNOWBALL_LAUNCHER_NAME = "SnowBall Launcher";

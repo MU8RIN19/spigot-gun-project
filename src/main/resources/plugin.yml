@@ -1,4 +1,4 @@
 name: plugin-tutorial
 version: '1.0-SNAPSHOT'
-main: com.M19.pluginTutorial.PluginTutorial
+main: com.M19.guns.guns
 api-version: '1.21'
